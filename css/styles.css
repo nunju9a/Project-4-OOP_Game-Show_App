@@ -40,6 +40,7 @@ h2 {
   text-transform: uppercase;
   font-size: var(--font-size-large);
   margin: 0;
+  bottom: -200px;
 }
 
 h1 {
@@ -47,22 +48,25 @@ h1 {
 }
 
 button {
+
   margin: 6px;
   border: 1px solid transparent;
   padding: .5rem 1rem;
   color: var(--color-keys);
   font-size: var(--font-size-medium);
-  background-color: var(--color-keys-light);
-  border-radius: 5px;
+  background-color: black;
+  border-radius: 20px;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
+ 
 }
 
 #btn__reset {
-	width: 200px;
-	margin: 0 auto;
+	width: 150px;
+  margin: 0 auto;
+  color: green;
 }
 
 .main-container {
@@ -180,7 +184,9 @@ button {
 }
 
 .start {
-  background-color: #3a3f58;
+  background-image: url(../images/starwarsOPEN.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .start a {
@@ -189,6 +195,10 @@ button {
 
 .win {
   background-color: var(--color-win);
+  background: url(../images/swVictory3.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 250px;
 }
 
 .win a {
@@ -197,6 +207,10 @@ button {
 
 .lose {
   background-color: #f5785f;
+  background: url(../images/swLoser4.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 250px;
 }
 
 .lose a {
