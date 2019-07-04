@@ -15,14 +15,7 @@ $( "#btn__reset" ).click( () => { gameNew = new Game(); gameNew.startGame(); } )
 
 $( "#qwerty" ).on( "click", ".key", (event) => gameNew.handleInteraction( event ) );
 
-// document.addEventListener(
-//     'keypress',
-//     ( event ) =>
-// 	{
-// 	    $key = $( "#qwerty button.key." + event.key );
-// 	    $key.click();
-// 	}
-// )
+$( "#qwerty" ).on( "keypress", ".key", (event) => gameNew.handleInteraction( event ) );
 
 //document.addEventListener("keydown", event => {
     //if (!event.repeat && gameNew.activePhrase) {
