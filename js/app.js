@@ -9,3 +9,23 @@ app.js
 //const phrase = new Phrase ('Life is like a box of chocolates');
 //console.log(`Phrase - phrase: ${phrase.phrase}`);
 
+let gameNew;
+
+$( "#btn__reset" ).click( () => { gameNew = new Game(); gameNew.startGame(); } );
+
+$( "#qwerty" ).on( "click", ".key", (event) => gameNew.handleInteraction( event ) );
+
+// document.addEventListener(
+//     'keypress',
+//     ( event ) =>
+// 	{
+// 	    $key = $( "#qwerty button.key." + event.key );
+// 	    $key.click();
+// 	}
+// )
+
+//document.addEventListener("keydown", event => {
+    //if (!event.repeat && gameNew.activePhrase) {
+    //  gameNew.handlePhysicalKeyboardInteraction(event.key);
+   // }
+//  });
