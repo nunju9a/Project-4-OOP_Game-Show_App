@@ -25,10 +25,9 @@ class Phrase {
               } else {
                     continue;
                 }
-            this.$phrase.append( $letter );                                    // Appends character to phrase object
+            this.$phrase.append( $letter );                                  // Appends character to phrase object
 	    }
     }
-
     // CHECKING EACH GUESSED LETTER TO SEE IF IT IS IN THE PHRASE
     checkLetter( letterGuess ) {
         // LOOPING THROUGH EVERY LETTER IN PHRASE
@@ -40,12 +39,10 @@ class Phrase {
         } 
         return ( false );                                                  // Return false if no match
     }
-
     // REVEAL EACH LETTER ON THE BOARD THAT MATCHES THE PLAYER'S GUESS
     showMatchedLetter( letterGuess ) {
         let $letters = $( '#phrase ul .' + letterGuess );
         $letters.removeClass( "hide" );
         $letters.addClass( "show" );
-	
     } 
 }
