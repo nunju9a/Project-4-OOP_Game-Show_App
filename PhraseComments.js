@@ -5,13 +5,14 @@ Phrase.js Comments
 ***************************/
 
 
-//CREATING PHRASE CLASS (Entire Javascript file is this one class)
+class Phrase {  //CREATING PHRASE CLASS (Entire Javascript file is this one class)
 
-    // constructor that receives a (phrase) parameter and initializes a phrase property set to the phrase
+    constructor( phrase ) { // Initializes a phrase property set to the phrase
         //Takes the phrase being held and converts to lowercase
+    }
     
     
-    // addPhraseToDisplay() METHOD, WHICH ADDS LETTER PLACEHOLDERS (BOXES) TO THE GAMEBOARD AT THE START
+    addPhraseToDisplay() // METHOD WHICH ADDS LETTER PLACEHOLDERS (BOXES) TO THE GAMEBOARD AT THE START
 
         // Go through the phrase and create <li> tags holding each letter and space. (I used a for loop)
         // Use the "hide letter" class for letters and the "space" class for spaces
@@ -36,11 +37,11 @@ Phrase.js Comments
             *******************************************************************/
         
         
-    // checkLetter() METHOD, CHECKING EACH GUESSED LETTER TO SEE IF IT IS IN THE PHRASE
+    checkLetter() //METHOD THAT CHECKS EACH GUESSED LETTER TO SEE IF IT IS IN THE PHRASE
    
         // Go through the phrase and test if the guessed letter matches any letter in the phrase. (I used a for loop again)
 
 
-    // showMatchedLetter() METHOD, REVEALS EACH LETTER ON THE BOARD THAT MATCHES THE PLAYER'S GUESS
+    showMatchedLetter() // METHOD THAT REVEALS EACH LETTER ON THE BOARD THAT MATCHES THE PLAYER'S GUESS
         // Remove the class of "hide" and add the class of "show"
-    
+}
