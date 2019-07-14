@@ -85,6 +85,7 @@ button {
 #phrase ul li{
   margin-top: 15px;
   background-color: black;
+  user-select: none;
 }
 
 /* Title */
