@@ -97,8 +97,9 @@ class Game {
     // DISPLAYS A MESSAGE ON WHETHER USER WINS OR LOSES
     gameOver() {
         let $mainScreen = $("#overlay");
-        $mainScreen.show();                                                   // Leaves game screen and goes back to overlay
+        $mainScreen.show();                                                     // Leaves game screen and goes back to overlay
         let $message = $("#game-over-message");
+        $("#qwerty .key").prop("disabled", true);                             // Disable keyboard
         if (this.missed === this.missLimit) {                                // If user has max misses, they lose and...
             $(".title").text(`You are worse than Jar Jar Binks!`);
             $message.text(`The answer was '${this.activePhrase.phrase.toUpperCase()}'. Dare to play again?`); //Display losing message
